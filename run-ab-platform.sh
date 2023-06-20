@@ -37,8 +37,8 @@ Help()
 ########## Declare assets care about ##########
       docker_compose_yaml="docker-compose.yaml"
 docker_compose_debug_yaml="docker-compose.debug.yaml"
-                  dot_env="env.txt"
-              dot_env_dev="env.dev.txt"
+                  dot_env=".env"
+              dot_env_dev=".env.dev"
                      flags="flags.yml"
 # any string is an array to POSIX shell. Space seperates values
 all_files="$docker_compose_yaml $docker_compose_debug_yaml $dot_env $dot_env_dev $flags"
