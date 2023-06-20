@@ -43,7 +43,7 @@ docker_compose_debug_yaml="docker-compose.debug.yaml"
 # any string is an array to POSIX shell. Space seperates values
 all_files="$docker_compose_yaml $docker_compose_debug_yaml $dot_env $dot_env_dev $flags"
 
-base_github_url="https://raw.githubusercontent.com/TalentLift/airbyte/master/"
+base_github_url="https://raw.githubusercontent.com/talentlift/airbyte-platform/v$VERSION/"
 
 ############################################################
 # Download                                                 #
