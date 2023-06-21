@@ -36,7 +36,7 @@ class DestinationTypesense(Destination):
                     client.collections[steam_name].delete()
                 except Exception:
                     pass
-                client.collections.create({"name": steam_name, "fields": [{"name": ".*", "type": "auto"}]})
+                client.collections.create({"name": steam_name, "fields": [{"name": ".*", "type": "auto"}], "enable_nested_fields":true})
 
             writer = TypesenseWriter(client, steam_name, config.get("batch_size"))
             for message in input_messages:
